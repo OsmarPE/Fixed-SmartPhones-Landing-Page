@@ -6,14 +6,14 @@ import Button from '../components/Button.astro'
 <div class="header relative">
     <Container>
         <div class="header__body h-[94px] flex items-center justify-between text-white">
-            <a class="header__title" href="/"> <span class="header__title--bold font-bold">Dani</span> Smarphone</a>
+            <a title="Ir al inicio de la pagina" class="header__title" href="/"> <span class="header__title--bold font-bold">Dani</span> Smarphone</a>
             <nav class="main-nav hidden md:block z-10 ">
                 <ul class="main-nav__list flex items-center gap-6" >
-                    <li class="main-nav__item"><a href="/" class="main-nav__link">Inicio</a></li>
-                    <li class="main-nav__item"><a href="/" class="main-nav__link">Servicios</a></li>
-                    <li class="main-nav__item"><a href="/" class="main-nav__link">Ubicación</a></li>
-                    <li class="main-nav__item"><a href="/" class="main-nav__link">Trabajos</a></li>
-                    <li class="main-nav__item"><Button href="#contact" classes="main-nav__link" >Contacto</Button></li>
+                    <li class="main-nav__item"><a href="/" class="main-nav__link hover:opacity-80 transition-all duration-500">Inicio</a></li>
+                    <li class="main-nav__item"><a href="#services" class="main-nav__link hover:opacity-80 transition-all duration-500">Servicios</a></li>
+                    <li class="main-nav__item"><a href="#location" class="main-nav__link hover:opacity-80 transition-all duration-500">Ubicación</a></li>
+                    <li class="main-nav__item"><a href="#work" class="main-nav__link hover:opacity-80 transition-all duration-500">Trabajos</a></li>
+                    <li class="main-nav__item"><Button title="boton para ir ver el contacto" href="#contact" classes="main-nav__link hover:opacity-80 transition-all duration-500" >Contacto</Button></li>
                 </ul>
             </nav>
         </div>

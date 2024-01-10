@@ -13,6 +13,7 @@ const { title } = Astro.props;
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="preconnect" href="https://maps.googleapis.com">
 		<meta name="generator" content={Astro.generator} />
 		<meta
 			name="description"
@@ -26,6 +27,7 @@ const { title } = Astro.props;
 			name="keywords"
 			content="reparación de móviles, reparación de tablets, servicio técnico de móviles, reparación de pantallas de móviles, reparación de baterías para tablets, soluciones rápidas para problemas de software, desbloqueos de telefono"
 		/>
+		<meta name="author" content="Osmar Uriel Perera Balam">
 		<title>{title}</title>
 	</head>
 	<body class="font-primary">
@@ -33,22 +35,26 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
+	
 	@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 	@font-face {
 		font-family: "Product Sans Regular";
 		font-weight: 400;
+		font-display: swap;
 		src: url("../assets/fonts/ProductSans-Regular.woff") format("woff");
 	}
 	@font-face {
 		font-family: "Product Sans Regular";
 		font-weight: 500;
+		font-display: swap;
 		src: url("../assets/fonts/ProductSans-Medium.woff") format("woff");
 	}
 	@font-face {
 		font-family: "Product Sans Regular";
 		font-weight: 500;
-		src: url("../assets/fonts/ProductSans-Bold") format("woff");
+		font-display: swap;
+		src: url("../assets/fonts/ProductSans-Bold.woff") format("woff");
 	}
 
 	:root {

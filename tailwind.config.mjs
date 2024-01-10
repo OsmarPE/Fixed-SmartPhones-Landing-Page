@@ -8,7 +8,8 @@ export default {
 				'grid-fill-300':'repeat(auto-fill,minmax(300px,1fr)',
 			},
 			colors:{
-				'blue-main':'#246BFD'
+				'blue-main':'#1951C2',
+				'blue-secundary':'#1640df'
 			},
 			fontFamily:{
 				'primary':['Product Sans Regular','sans-serif'],
