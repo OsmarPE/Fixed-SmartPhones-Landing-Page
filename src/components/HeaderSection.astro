@@ -1,0 +1,16 @@
+---
+interface Props {
+    text: string;
+    title: string;
+    classes?:string;
+    description?:string;
+}
+
+const { text, title, classes = '', description } = Astro.props;
+---
+
+<div class={` py-8 text-center ${classes}`}>
+    <span class=" text-blue-main font-medium uppercase font-secundary mb-[.25rem] text-sm tracking-[0.125rem] ">{text}</span>
+    <h2 class=" text-4xl">{title}</h2>
+    <span class="text-[#9ca3af] inline-block mt-1">{description}</span>
+</div>

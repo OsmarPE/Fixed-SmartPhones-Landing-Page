@@ -1,0 +1,24 @@
+---
+import { imagesWork } from "../helpers/util";
+import Container from "./Container.astro";
+import HeaderSection from "./HeaderSection.astro";
+import WorkImage from "./WorkImage.astro";
+---
+
+<section class="work py-12">
+    <Container>
+        <div class="work__body">
+            <HeaderSection title="Trabajos" text="NUESTROS" description="Desbloqueos, reparaciones, cambios de pantallas y más."/>
+            <div
+                class="work__images grid mt-5 gap-4 grid-cols-[repeat(auto-fill,minmax(250px,1fr))]"
+            >
+                {
+                    imagesWork.map(({ src, alt , description, modelo }) => (
+                        <WorkImage src={src} text={description} title={modelo} alt={alt}  />
+                    ))
+                }
+            </div>
+        </div>
+    </Container>
+</section>
+

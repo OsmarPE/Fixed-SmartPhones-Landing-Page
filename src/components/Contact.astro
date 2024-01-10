@@ -1,0 +1,48 @@
+---
+import Container from "./Container.astro";
+import HeaderSection from "./HeaderSection.astro";
+7;
+import PhoneBreak from "../images/phone-break.png";
+import ContactBtn from "./ContactBtn.astro";
+---
+
+<section class="contact" id="contact">
+    <Container>
+        <div class="contact__body">
+            <HeaderSection title="Contactarnos" text="PUEDES" />
+            <div
+                class="contact__info max-w-2xl mx-auto my-8 p-6 md:p-8 bg-white flex gap-6 md:gap-0 flex-col md:flex-row items-center shadow-contact rounded-2xl"
+            >
+                <ContactBtn href="https://api.whatsapp.com/send/?phone=9992235528">
+                    <i class="ri-phone-line"></i>
+                    +52 9992235528
+                </ContactBtn>
+                <ContactBtn
+                    href="https://www.facebook.com/profile.php?id=61554476270978&mibextid=2JQ9oc"
+                >
+                    <i class="ri-facebook-circle-line"></i>
+                    David Daniel Diaz
+                </ContactBtn>
+                <ContactBtn href="mailto:ddiax205@gmail.com">
+                    <i class="ri-mail-line"></i>
+                    ddiax205@gmail.com
+                </ContactBtn>
+            </div>
+            <div>
+                <img
+                    src={PhoneBreak.src}
+                    class="w-[90%] max-w-[20rem] mx-auto"
+                    width="320"
+                    height="507"
+                    alt="telefono con una pantalla rota"
+                />
+            </div>
+        </div>
+    </Container>
+</section>
+
+<style>
+    i {
+        font-size: 1.25rem;
+    }
+</style>

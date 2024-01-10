@@ -1,0 +1,39 @@
+---
+interface Props {
+    src: string;
+    title: string;
+    text: string;
+    alt: string;
+}
+
+const { src, text, title, alt } = Astro.props;
+---
+
+<figure class="workimage relative">
+    <img
+        src={src}
+        class="w-full h-[30rem] rounded-xl"
+        width={200}
+        height={500}
+        alt={alt}
+        loading="lazy"
+        
+    />
+    <div class="workimage__body absolute inset-2 bg-blue-main/50 rounded-lg text-white p-5 backdrop-blur">
+        <h4 class="workimage__title mb-2 text-3xl">{title}</h4>
+        <p class="workimage__copy capitalize">{text}</p>
+    </div>
+</figure>
+
+<style>
+    .workimage__body {
+        clip-path: polygon(0 100%, 100% 100% ,100% 100%, 0 100% );
+        transition: all 0.6s ease;
+        opacity: 0;
+        
+    }
+    .workimage:hover .workimage__body{
+        clip-path: polygon(0 0%, 100% 0 ,100% 100%, 0 100% );
+        opacity: 1;
+    }
+</style>

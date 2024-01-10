@@ -1,0 +1,38 @@
+---
+import Container from "./Container.astro";
+import HeaderSection from "./HeaderSection.astro";
+import ServiceCard from "./ServiceCard.astro";
+import { services } from "../helpers/util";
+---
+
+<section class="services">
+    <Container>
+        <div class="services__body">
+            <HeaderSection title="Servicios" text="NUESTROS" description="Nosotros ofrecemos las mejores experiencias" />
+            <div class="services__cards">
+                {
+                    services.map(({ title, description, icon }) => (
+                        <ServiceCard
+                            title={title}
+                            text={description}
+                            icon={icon}
+                        />
+                    ))
+                }
+            </div>
+        </div>
+    </Container>
+</section>
+
+<style>
+    .services {
+        padding: 5rem 0;
+    }
+    .services__cards {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+    
+</style>
