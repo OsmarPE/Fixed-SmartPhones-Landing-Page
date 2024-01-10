@@ -1,6 +1,11 @@
 # Fix SmartPhones David
 Small page for a small business in phone repair
 
+# Captures
+![image](https://github.com/OsmarPE/Fixed-SmartPhones-Landing-Page/assets/81031316/7a72ed2f-bffd-4f90-a5df-62d356b5952e)
+![image](https://github.com/OsmarPE/Fixed-SmartPhones-Landing-Page/assets/81031316/9f8858fa-de68-4f33-b3ce-93b7ebab3cfc)
+
+
 # Tools
 - Astro
 - Figma
