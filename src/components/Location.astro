@@ -6,16 +6,30 @@ import HeaderSection from "./HeaderSection.astro";
 <section class="location py-16 bg-[#F6F6F6]" id="location">
     <Container>
         <div class="location__body">
-            <HeaderSection title="Ubicados" text="ESTAMOS" description="Villas Caucel"/>
-            <div class="location__map mx-auto max-w-[800px] w-[90%] rounded-xl overflow-hidden">
-                <iframe class="w-full h-[30rem]" title="map of villas caucel" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1862.841531881576!2d-89.63586342764215!3d20.96523918967358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1704812770662!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <HeaderSection
+                title="Ubicados"
+                text="ESTAMOS"
+                description="Villas Caucel"
+            />
+            <div
+                class="location__map mx-auto max-w-[800px] w-[90%] rounded-xl overflow-hidden"
+            >
+                <iframe
+                    class="w-full h-[30rem]"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d553.7204543016937!2d-89.72158379631138!3d20.99374502512524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f560c9ee0fd78cd%3A0x9a0a699b68539798!2sC.%2077-A%20795a%2C%2097314%20M%C3%A9rida%2C%20Yuc.!5e0!3m2!1ses-419!2smx!4v1705200867226!5m2!1ses-419!2smx"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </Container>
 </section>
 
 <style>
-    .location{
+    .location {
         clip-path: polygon(0 6%, 100% 0, 100% 94%, 0 100%);
     }
 </style>
